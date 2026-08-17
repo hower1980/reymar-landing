@@ -1,3 +1,7 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+
 function AppleIcon() {
   return (
     <svg viewBox="0 0 384 512" className="h-7 w-7 fill-white" aria-hidden="true">
@@ -26,33 +30,68 @@ export function StoreButtons({
   align?: "start" | "center";
   id?: string;
 }) {
+  const [showToast, setShowToast] = useState(false);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, []);
+
+  const handleClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    setShowToast(true);
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    timeoutRef.current = setTimeout(() => setShowToast(false), 2400);
+  };
+
   return (
-    <div
-      id={id}
-      className={`flex scroll-mt-24 flex-col gap-3 sm:flex-row ${
-        align === "center" ? "items-center justify-center" : "items-stretch"
-      }`}
-    >
-      <a
-        href="#"
-        className="flex items-center gap-3 rounded-xl border border-border-subtle bg-black px-5 py-3 transition-transform hover:scale-[1.03] hover:border-white/30"
+    <div id={id} className="scroll-mt-24">
+      <div
+        className={`flex flex-col gap-3 sm:flex-row ${
+          align === "center" ? "items-center justify-center" : "items-stretch"
+        }`}
       >
-        <AppleIcon />
-        <span className="flex flex-col items-start leading-tight">
-          <span className="text-[11px] text-gray-300">Descárgalo en el</span>
-          <span className="text-lg font-semibold text-white">App Store</span>
-        </span>
-      </a>
-      <a
-        href="#"
-        className="flex items-center gap-3 rounded-xl border border-border-subtle bg-black px-5 py-3 transition-transform hover:scale-[1.03] hover:border-white/30"
+        <a
+          href="#"
+          onClick={handleClick}
+          className="flex items-center gap-3 rounded-xl border border-border-subtle bg-black px-5 py-3 transition-transform hover:scale-[1.03] hover:border-white/30"
+        >
+          <AppleIcon />
+          <span className="flex flex-col items-start leading-tight">
+            <span className="text-[11px] text-gray-300">Descárgalo en el</span>
+            <span className="text-lg font-semibold text-white">App Store</span>
+          </span>
+        </a>
+        <a
+          href="#"
+          onClick={handleClick}
+          className="flex items-center gap-3 rounded-xl border border-border-subtle bg-black px-5 py-3 transition-transform hover:scale-[1.03] hover:border-white/30"
+        >
+          <PlayIcon />
+          <span className="flex flex-col items-start leading-tight">
+            <span className="text-[11px] text-gray-300">Disponible en</span>
+            <span className="text-lg font-semibold text-white">Google Play</span>
+          </span>
+        </a>
+      </div>
+
+      <div
+        className={`mt-3 flex ${
+          align === "center" ? "justify-center" : "justify-center sm:justify-start"
+        }`}
       >
-        <PlayIcon />
-        <span className="flex flex-col items-start leading-tight">
-          <span className="text-[11px] text-gray-300">Disponible en</span>
-          <span className="text-lg font-semibold text-white">Google Play</span>
+        <span
+          role="status"
+          aria-live="polite"
+          className={`rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-xs font-semibold text-accent transition-opacity duration-300 ${
+            showToast ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          Próximamente disponible
         </span>
-      </a>
+      </div>
     </div>
   );
 }

@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
         <div className="flex flex-col items-center gap-8 sm:flex-row sm:items-start sm:justify-between">
           <div className="flex flex-col items-center gap-3 sm:items-start">
-            <Logo />
+            <Logo size="sm" />
             <p className="max-w-xs text-center text-sm text-muted sm:text-left">
               El SaaS de pronósticos de fútbol para competir con amigos en
               ligas privadas y públicas.

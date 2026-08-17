@@ -33,17 +33,17 @@ export default function Hero() {
             <StoreButtons id="descargar" />
           </div>
 
-          <div className="mt-10 flex items-center gap-6 text-sm text-muted">
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-x-4 gap-y-3 text-sm text-muted sm:gap-x-6 lg:justify-start">
             <div className="flex flex-col">
               <span className="text-xl font-bold text-foreground">+50</span>
               <span>Ligas activas</span>
             </div>
-            <div className="h-8 w-px bg-border-subtle" />
+            <div className="hidden h-8 w-px bg-border-subtle sm:block" />
             <div className="flex flex-col">
               <span className="text-xl font-bold text-foreground">3</span>
               <span>Torneos oficiales</span>
             </div>
-            <div className="h-8 w-px bg-border-subtle" />
+            <div className="hidden h-8 w-px bg-border-subtle sm:block" />
             <div className="flex flex-col">
               <span className="text-xl font-bold text-foreground">100%</span>
               <span>Habilidad, no azar</span>
@@ -51,13 +51,17 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative flex justify-center lg:justify-end">
-          <img
-            src="/brand/isotipo-transparente.svg"
-            alt="Isotipo de PronoMatch"
-            className="animate-brand-float absolute -top-8 right-4 h-16 w-16 drop-shadow-[0_8px_24px_rgba(255,0,0,0.45)] sm:right-8 sm:h-20 sm:w-20"
-          />
-          <PhoneMockup />
+        <div className="flex justify-center pt-8 lg:justify-end lg:pt-10">
+          <div className="relative w-[280px] sm:w-[300px]">
+            <div className="animate-brand-float absolute -top-6 right-2 z-20 flex h-16 w-16 items-center justify-center rounded-2xl border border-border-subtle bg-surface shadow-[0_10px_30px_rgba(255,0,0,0.45)] sm:-top-8 sm:right-4 sm:h-20 sm:w-20">
+              <img
+                src="/brand/isotipo-transparente.svg"
+                alt="Isotipo de PronoMatch"
+                className="h-9 w-9 sm:h-11 sm:w-11"
+              />
+            </div>
+            <PhoneMockup />
+          </div>
         </div>
       </div>
     </section>

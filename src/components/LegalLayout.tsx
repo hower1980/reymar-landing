@@ -14,14 +14,15 @@ export default function LegalLayout({
   return (
     <div className="flex min-h-screen flex-col">
       <header className="border-b border-border-subtle/60 bg-background/80 backdrop-blur-md">
-        <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-4 lg:px-8">
-          <Logo />
+        <div className="mx-auto flex max-w-4xl items-center justify-between gap-3 px-6 py-4 lg:px-8">
+          <Logo size="sm" />
           <a
             href="/"
-            className="inline-flex items-center gap-1.5 text-sm font-medium text-muted transition-colors hover:text-foreground"
+            className="inline-flex shrink-0 items-center gap-1.5 text-sm font-medium text-muted transition-colors hover:text-foreground"
           >
             <ArrowLeft className="h-4 w-4" />
-            Volver al inicio
+            <span className="hidden sm:inline">Volver al inicio</span>
+            <span className="sm:hidden">Volver</span>
           </a>
         </div>
       </header>

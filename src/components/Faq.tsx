@@ -10,14 +10,36 @@ const FAQ_ITEMS = [
       "No. PronoMatch es un SaaS deportivo de entretenimiento y habilidad. No manejamos dinero real, apuestas ni casas de apuestas: se trata de demostrar tus conocimientos de fútbol pronosticando resultados y sumando puntos.",
   },
   {
-    question: "¿Puedo crear ligas con mis amigos?",
+    question: "¿Es totalmente gratis descargar y usar PronoMatch?",
     answer:
-      "Sí. Puedes crear ligas privadas ilimitadas, invitar a tus amigos mediante un código o enlace, y tener control total sobre los miembros que forman parte de tu liga.",
+      "Sí. Puedes descargar la aplicación y participar en las modalidades generales de pronóstico de forma gratuita (Modo Free). Contamos con funciones especiales y la creación de ligas privadas avanzadas bajo un modelo Premium opcional.",
+  },
+  {
+    question:
+      "¿Necesito crear una cuenta obligatoriamente para hacer mi primer pronóstico?",
+    answer:
+      "No de inmediato. Gracias a nuestra tecnología de pronóstico rápido (Ghost Prediction), puedes ingresar un marcador y evaluar tus opciones al instante. Solo te pediremos registrar tu cuenta al momento de guardar oficialmente tus datos para asegurar tu lugar en el ranking.",
+  },
+  {
+    question:
+      "¿Cómo funcionan las ligas privadas con amigos o compañeros de trabajo?",
+    answer:
+      "Es muy sencillo. Un usuario administrador crea la liga privada y comparte un código de invitación único. Con ese código, tus amigos o compañeros pueden unirse, competir en una tabla de clasificación exclusiva y medir quién sabe más de fútbol, con control total sobre los miembros del grupo.",
   },
   {
     question: "¿Qué torneos cubren?",
     answer:
       "Actualmente cubrimos la UEFA Champions League, la Copa Libertadores y la Copa de Campeones de la Concacaf, con más torneos en camino.",
+  },
+  {
+    question: "¿Cómo se calculan los puntos en los partidos?",
+    answer:
+      "El sistema evalúa con precisión matemática tanto el marcador exacto como la tendencia del partido (ganador, perdedor o empate). Además, contamos con categorías especiales de predicción (como Reymar o Bracket según el torneo) para que cada acierto estratégico sume de forma automatizada e inmutable.",
+  },
+  {
+    question: "¿Debo ingresar los resultados de los partidos manualmente?",
+    answer:
+      "Para nada. PronoMatch cuenta con una arquitectura automatizada conectada a fuentes de datos oficiales, lo que garantiza que los marcadores y la tabla de posiciones se actualicen en tiempo real al finalizar cada encuentro.",
   },
 ];
 

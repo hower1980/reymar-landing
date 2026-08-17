@@ -8,7 +8,7 @@ const MATCHES = [
 
 const LEADERBOARD = [
   { pos: 1, name: "Carlos M.", points: 128 },
-  { pos: 2, name: "Eisen R.", points: 121 },
+  { pos: 2, name: "Valeria S.", points: 121 },
   { pos: 3, name: "Ana G.", points: 115 },
 ];
 
