@@ -17,9 +17,9 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-balance text-lg leading-relaxed text-muted">
-            Crea tu propia liga privada, invita a tus amigos y compite jornada
-            a jornada acertando resultados. Pronostica en torneos públicos o
-            reta a tu grupo en una porra 100% personalizada.
+            Crea tu propia liga, invita a tu grupo y compite a través 
+            de múltiples categorías exclusivas y funciones especiales.
+            No es solo predecir resultados, es liderar el ranking.
           </p>
 
           <div className="mt-10">

@@ -12,24 +12,48 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const SITE_URL = "https://pronomatch.app";
+const APP_NAME = "PronoMatch: Pronósticos Fútbol";
+const PROMO_DESCRIPTION =
+  "¡Compite con tus amigos en la UEFA Champions League, Copa Libertadores y Concacaf! Haz tus pronósticos, crea ligas privadas y demuestra quién sabe más de fútbol.";
+
 export const metadata: Metadata = {
-  title: "PronoMatch — La experiencia definitiva de pronósticos de fútbol",
-  description:
-    "Compite en ligas privadas o públicas de pronósticos de fútbol con tus amigos. Champions League, Copa Libertadores y Concacaf. Descarga PronoMatch.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: `${APP_NAME} — Ligas privadas y quinielas`,
+    template: `%s | PronoMatch`,
+  },
+  description: PROMO_DESCRIPTION,
+  applicationName: "PronoMatch",
   keywords: [
-    "PronoMatch",
-    "pronósticos de fútbol",
-    "polla mundialista",
-    "porra fútbol",
-    "ligas privadas fútbol",
-    "Champions League",
-    "Copa Libertadores",
+    "pronosticos",
+    "futbol",
+    "polla",
+    "porra",
+    "quiniela",
+    "champions",
+    "libertadores",
+    "concacaf",
+    "ligas",
+    "resultados",
+    "marcador",
   ],
+  category: "Deportes",
   openGraph: {
-    title: "PronoMatch — La experiencia definitiva de pronósticos de fútbol",
-    description:
-      "Crea ligas privadas, invita a tus amigos y demuestra quién sabe más de fútbol.",
+    title: `${APP_NAME} — Ligas privadas y quinielas`,
+    description: PROMO_DESCRIPTION,
+    url: SITE_URL,
+    siteName: "PronoMatch",
+    locale: "es_ES",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${APP_NAME} — Ligas privadas y quinielas`,
+    description: PROMO_DESCRIPTION,
+  },
+  alternates: {
+    canonical: SITE_URL,
   },
 };
 
