@@ -4,6 +4,13 @@ import PhoneMockup from "./PhoneMockup";
 export default function Hero() {
   return (
     <section className="gradient-glow relative overflow-hidden">
+      <img
+        src="/brand/isotipo-transparente.svg"
+        alt=""
+        aria-hidden="true"
+        className="pointer-events-none absolute -right-24 -top-24 h-[420px] w-[420px] opacity-[0.06] sm:h-[520px] sm:w-[520px]"
+      />
+
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-16 px-6 py-16 sm:py-24 lg:grid-cols-2 lg:gap-12 lg:px-8 lg:py-32">
         <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
           <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-border-subtle bg-surface px-4 py-1.5 text-xs font-medium text-muted">
@@ -44,7 +51,12 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="flex justify-center lg:justify-end">
+        <div className="relative flex justify-center lg:justify-end">
+          <img
+            src="/brand/isotipo-transparente.svg"
+            alt="Isotipo de PronoMatch"
+            className="animate-brand-float absolute -top-8 right-4 h-16 w-16 drop-shadow-[0_8px_24px_rgba(255,0,0,0.45)] sm:right-8 sm:h-20 sm:w-20"
+          />
           <PhoneMockup />
         </div>
       </div>

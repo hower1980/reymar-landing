@@ -1,26 +1,20 @@
-import { Lock, Zap, ShieldCheck, Trophy } from "lucide-react";
-
 const FEATURES = [
   {
-    icon: Lock,
     title: "Ligas 100% privadas",
     description:
       "Controla quién entra a tu liga con invitaciones y códigos de acceso exclusivos.",
   },
   {
-    icon: Zap,
     title: "Clasificación en tiempo real",
     description:
       "Los puntos se actualizan automáticamente al finalizar cada partido.",
   },
   {
-    icon: Trophy,
     title: "Multi-torneo",
     description:
       "Sigue varias competiciones al mismo tiempo desde una sola app.",
   },
   {
-    icon: ShieldCheck,
     title: "Entretenimiento y habilidad",
     description:
       "Un SaaS deportivo de pronósticos: sin apuestas, sin dinero en juego.",
@@ -45,10 +39,15 @@ export default function Features() {
           {FEATURES.map((feature) => (
             <div
               key={feature.title}
-              className="rounded-2xl border border-border-subtle bg-surface p-6"
+              className="rounded-2xl border border-border-subtle bg-surface p-6 transition-colors hover:border-accent/50"
             >
               <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent/10">
-                <feature.icon className="h-5 w-5 text-accent" strokeWidth={1.75} />
+                <img
+                  src="/brand/isotipo-transparente.svg"
+                  alt=""
+                  aria-hidden="true"
+                  className="h-6 w-6"
+                />
               </span>
               <h3 className="mt-4 text-base font-bold text-foreground">
                 {feature.title}

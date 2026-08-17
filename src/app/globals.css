@@ -1,14 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #121a35;
-  --surface: #182349;
-  --surface-elevated: #1e2c58;
-  --border-subtle: #2a3660;
+  --background: #0a1128;
+  --surface: #111a33;
+  --surface-elevated: #172347;
+  --border-subtle: #232c52;
   --foreground: #f5f6fa;
   --muted: #9ca3af;
   --accent: #ff0000;
   --accent-hover: #d90000;
+  --accent-secondary: #ff7200;
 }
 
 @theme inline {
@@ -20,8 +21,9 @@
   --color-muted: var(--muted);
   --color-accent: var(--accent);
   --color-accent-hover: var(--accent-hover);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-accent-secondary: var(--accent-secondary);
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-montserrat);
 }
 
 html {
@@ -32,6 +34,16 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading), var(--font-sans), Arial, Helvetica,
+    sans-serif;
 }
 
 .gradient-glow {
@@ -49,4 +61,18 @@ body {
 
 .text-balance {
   text-wrap: balance;
+}
+
+@keyframes brand-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.animate-brand-float {
+  animation: brand-float 5s ease-in-out infinite;
 }
