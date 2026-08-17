@@ -29,7 +29,7 @@ const FEATURES = [
 
 export default function Features() {
   return (
-    <section className="border-t border-border-subtle/60 bg-surface/40 py-20 sm:py-28">
+    <section className="border-t border-border-subtle/60 py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-balance text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">

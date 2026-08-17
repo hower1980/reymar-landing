@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import LegalLayout from "@/components/LegalLayout";
+import { SITE_URL } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Términos de Uso",
   description:
     "Condiciones de uso de PronoMatch: plataforma SaaS de pronósticos de fútbol, sin apuestas ni premios en dinero real.",
   alternates: {
-    canonical: "https://pronomatch.app/terminos",
+    canonical: `${SITE_URL}/terminos`,
   },
 };
 

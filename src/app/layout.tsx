@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { SITE_URL } from "@/lib/site-config";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,7 +13,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const SITE_URL = "https://pronomatch.app";
 const APP_NAME = "PronoMatch: Pronósticos Fútbol";
 const PROMO_DESCRIPTION =
   "¡Compite con tus amigos en la UEFA Champions League, Copa Libertadores y Concacaf! Haz tus pronósticos, crea ligas privadas y demuestra quién sabe más de fútbol.";

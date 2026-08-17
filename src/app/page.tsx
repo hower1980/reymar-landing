@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import HowItWorks from "@/components/HowItWorks";
 import Tournaments from "@/components/Tournaments";
+import GameCategories from "@/components/GameCategories";
 import Features from "@/components/Features";
 import Faq from "@/components/Faq";
 import FinalCta from "@/components/FinalCta";
@@ -15,6 +16,7 @@ export default function Home() {
         <Hero />
         <HowItWorks />
         <Tournaments />
+        <GameCategories />
         <Features />
         <Faq />
         <FinalCta />

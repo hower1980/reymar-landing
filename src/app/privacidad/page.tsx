@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import LegalLayout from "@/components/LegalLayout";
+import { SITE_URL } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Política de Privacidad",
   description:
     "Conoce cómo PronoMatch recopila, usa y protege tus datos personales a través de Supabase, Expo y RevenueCat.",
   alternates: {
-    canonical: "https://pronomatch.app/privacidad",
+    canonical: `${SITE_URL}/privacidad`,
   },
 };
 

@@ -7,6 +7,7 @@ import Logo from "./Logo";
 const NAV_LINKS = [
   { label: "Cómo funciona", href: "#como-funciona" },
   { label: "Torneos", href: "#torneos" },
+  { label: "Categorías", href: "#categorias" },
   { label: "Preguntas frecuentes", href: "#faq" },
 ];
 
