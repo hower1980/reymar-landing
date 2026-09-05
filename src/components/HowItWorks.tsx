@@ -5,7 +5,7 @@ const STEPS = [
     icon: Users,
     title: "Crea o únete a una liga",
     description:
-      "Arma tu liga privada en segundos e invita a tus amigos, o suma puntos en las ligas públicas de PronoMatch.",
+      "Arma tu liga privada en segundos e invita a tus amigos, o suma puntos en las ligas públicas de Reymar.",
   },
   {
     icon: Target,
@@ -40,7 +40,7 @@ export default function HowItWorks() {
               key={step.title}
               className="relative rounded-2xl border border-border-subtle bg-surface p-8"
             >
-              <span className="absolute -top-4 left-8 flex h-8 w-8 items-center justify-center rounded-full bg-accent text-sm font-bold text-white">
+              <span className="absolute -top-4 left-8 flex h-8 w-8 items-center justify-center rounded-full bg-accent text-sm font-bold text-on-accent">
                 {index + 1}
               </span>
               <step.icon className="h-8 w-8 text-accent" strokeWidth={1.75} />

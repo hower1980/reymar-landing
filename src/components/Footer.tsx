@@ -1,5 +1,6 @@
 import { Mail } from "lucide-react";
 import Logo from "./Logo";
+import { SUPPORT_EMAIL } from "@/lib/site-config";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -33,19 +34,19 @@ export default function Footer() {
             </nav>
 
             <a
-              href="mailto:soporte@pronomatch.app"
-              className="inline-flex items-center gap-2 rounded-full border border-border-subtle px-4 py-2 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
+              href={`mailto:${SUPPORT_EMAIL}`}
+              aria-label="Escribir a soporte"
+              className="inline-flex items-center justify-center rounded-full border border-border-subtle p-2.5 text-foreground transition-colors hover:border-accent hover:text-accent"
             >
               <Mail className="h-4 w-4" />
-              Soporte
             </a>
           </div>
         </div>
 
         <div className="mt-10 border-t border-border-subtle/60 pt-6 text-center text-xs text-muted sm:text-left">
-          © {year} PronoMatch. Todos los derechos reservados. PronoMatch es
-          una plataforma de entretenimiento deportivo y no está afiliada con
-          la UEFA, CONMEBOL ni CONCACAF.
+          © {year} Reymar. Todos los derechos reservados. Reymar es una
+          plataforma de entretenimiento deportivo y no está afiliada con la
+          UEFA, CONMEBOL ni CONCACAF.
         </div>
       </div>
     </footer>

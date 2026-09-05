@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import LegalLayout from "@/components/LegalLayout";
-import { SITE_URL } from "@/lib/site-config";
+import { SITE_URL, SUPPORT_EMAIL } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Términos de Uso",
   description:
-    "Condiciones de uso de PronoMatch: plataforma SaaS de pronósticos de fútbol, sin apuestas ni premios en dinero real.",
+    "Condiciones de uso de Reymar: plataforma SaaS de pronósticos de fútbol, sin apuestas ni premios en dinero real.",
   alternates: {
     canonical: `${SITE_URL}/terminos`,
   },
@@ -30,10 +30,10 @@ function Section({
 
 export default function TermsOfUsePage() {
   return (
-    <LegalLayout title="Términos de Uso" updatedAt="16 de agosto de 2026">
+    <LegalLayout title="Términos de Uso" updatedAt="5 de septiembre de 2026">
       <Section title="1. Aceptación de los Términos">
         <p>
-          Al registrarse o hacer uso de PronoMatch, el Usuario declara haber
+          Al registrarse o hacer uso de Reymar, el Usuario declara haber
           leído, comprendido y aceptado en su totalidad estos Términos y
           Condiciones de Uso. Si el Usuario no está de acuerdo con alguno de
           los puntos aquí expuestos, deberá abstenerse de utilizar la
@@ -43,7 +43,7 @@ export default function TermsOfUsePage() {
 
       <Section title="2. Naturaleza del Servicio y Ausencia de Apuestas">
         <p>
-          PronoMatch es una plataforma digital de software (SaaS) concebida
+          Reymar es una plataforma digital de software (SaaS) concebida
           exclusivamente con fines de entretenimiento social y recreativo.
         </p>
         <ol className="list-decimal space-y-2 pl-6">
@@ -51,7 +51,7 @@ export default function TermsOfUsePage() {
             <span className="font-semibold text-foreground">
               No es una Casa de Apuestas:
             </span>{" "}
-            PronoMatch no es un operador de apuestas, no posee licencias de
+            Reymar no es un operador de apuestas, no posee licencias de
             juego de azar ni actúa como intermediario financiero para la
             gestión de envites o apuestas.
           </li>
@@ -63,7 +63,7 @@ export default function TermsOfUsePage() {
             metálico o especies. Cualquier acuerdo privado entre usuarios de
             una liga sobre premios o reconocimientos externos es
             responsabilidad exclusiva de dichos participantes y ajeno por
-            completo a PronoMatch.
+            completo a Reymar.
           </li>
           <li>
             <span className="font-semibold text-foreground">
@@ -93,7 +93,7 @@ export default function TermsOfUsePage() {
             <span className="font-semibold text-foreground">
               Independencia de Marcas:
             </span>{" "}
-            PronoMatch utiliza nombres de fantasía, acrónimos geográficos y
+            Reymar utiliza nombres de fantasía, acrónimos geográficos y
             elementos gráficos genéricos o conceptuales. Ningún nombre,
             logo, escudo o distintivo comercial dentro de la app implica
             patrocinio, respaldo, licencia o vinculación oficial con clubes
@@ -105,7 +105,7 @@ export default function TermsOfUsePage() {
               Derechos de la Plataforma:
             </span>{" "}
             el diseño UI, los algoritmos de puntuación, el código fuente y
-            las marcas &quot;PronoMatch&quot; son propiedad intelectual
+            las marcas &quot;Reymar&quot; son propiedad intelectual
             exclusiva de la plataforma.
           </li>
         </ol>
@@ -120,7 +120,7 @@ export default function TermsOfUsePage() {
           <li>
             Se prohíbe expresamente el uso de nombres de usuario o nombres de
             ligas privadas que contengan lenguaje difamatorio, xenófobo,
-            obsceno o violatorio de derechos de terceros. PronoMatch se
+            obsceno o violatorio de derechos de terceros. Reymar se
             reserva el derecho de suspender o eliminar cuentas que
             incumplan esta norma.
           </li>
@@ -140,7 +140,7 @@ export default function TermsOfUsePage() {
           </li>
           <li>
             Las ventas de paquetes de actualización de ligas o funciones
-            Premium son finales y no reembolsables por parte de PronoMatch,
+            Premium son finales y no reembolsables por parte de Reymar,
             salvo disposición legal obligatoria de las plataformas de
             distribución de Apple o Google.
           </li>
@@ -149,11 +149,11 @@ export default function TermsOfUsePage() {
 
       <Section title="6. Limitación de Responsabilidad">
         <p>
-          PronoMatch realiza sus mejores esfuerzos por garantizar la
+          Reymar realiza sus mejores esfuerzos por garantizar la
           disponibilidad continua del servicio y la precisión en la
           sincronización de resultados deportivos provistos por API de
           terceros. Sin embargo, no se garantiza que el servicio esté libre
-          de interrupciones o errores técnicos imprevistos. PronoMatch no se
+          de interrupciones o errores técnicos imprevistos. Reymar no se
           hace responsable por pérdidas indirectas derivadas de fallas en la
           transmisión de datos antes del cierre de una jornada de
           pronósticos.
@@ -176,10 +176,10 @@ export default function TermsOfUsePage() {
           <li>
             <span className="font-semibold text-foreground">Correo:</span>{" "}
             <a
-              href="mailto:soporte@pronomatch.app"
+              href={`mailto:${SUPPORT_EMAIL}`}
               className="font-semibold text-accent hover:underline"
             >
-              soporte@pronomatch.app
+              {SUPPORT_EMAIL}
             </a>
           </li>
         </ul>

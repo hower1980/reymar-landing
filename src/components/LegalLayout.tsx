@@ -13,7 +13,7 @@ export default function LegalLayout({
 }) {
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="border-b border-border-subtle/60 bg-background/80 backdrop-blur-md">
+      <header className="border-b border-border-subtle/60 bg-background">
         <div className="mx-auto flex max-w-4xl items-center justify-between gap-3 px-6 py-4 lg:px-8">
           <Logo size="sm" />
           <a

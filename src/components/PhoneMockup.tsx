@@ -78,7 +78,7 @@ export default function PhoneMockup() {
                     <span
                       className={`flex h-4 w-4 items-center justify-center rounded-full text-[9px] font-bold ${
                         row.pos === 1
-                          ? "bg-accent text-white"
+                          ? "bg-accent text-on-accent"
                           : "bg-white/10 text-foreground"
                       }`}
                     >

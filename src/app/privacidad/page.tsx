@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import LegalLayout from "@/components/LegalLayout";
-import { SITE_URL } from "@/lib/site-config";
+import { PRIVACY_EMAIL, SITE_URL, SUPPORT_EMAIL } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Política de Privacidad",
   description:
-    "Conoce cómo PronoMatch recopila, usa y protege tus datos personales a través de Supabase, Expo y RevenueCat.",
+    "Conoce cómo Reymar recopila, usa y protege tus datos personales a través de Supabase, Expo y RevenueCat.",
   alternates: {
     canonical: `${SITE_URL}/privacidad`,
   },
@@ -30,17 +30,17 @@ function Section({
 
 export default function PrivacyPolicyPage() {
   return (
-    <LegalLayout title="Política de Privacidad" updatedAt="16 de agosto de 2026">
+    <LegalLayout title="Política de Privacidad" updatedAt="5 de septiembre de 2026">
       <Section title="1. Introducción">
         <p>
-          PronoMatch (&quot;la Aplicación&quot;, &quot;el Servicio&quot;,
+          Reymar (&quot;la Aplicación&quot;, &quot;el Servicio&quot;,
           &quot;nosotros&quot;) es una plataforma de Software como Servicio
           (SaaS) orientada al entretenimiento social y a la gestión de ligas
           privadas de pronósticos deportivos de fútbol. La presente Política
           de Privacidad describe cómo recopilamos, utilizamos, almacenamos y
           protegemos la información personal de nuestros usuarios
           (&quot;el Usuario&quot; o &quot;usted&quot;). Al descargar, acceder
-          o utilizar PronoMatch, usted acepta las prácticas descritas en esta
+          o utilizar Reymar, usted acepta las prácticas descritas en esta
           política.
         </p>
       </Section>
@@ -84,7 +84,7 @@ export default function PrivacyPolicyPage() {
             creadas, procesada y autenticada vía RevenueCat y las plataformas
             oficiales Apple App Store y Google Play Store.{" "}
             <span className="font-semibold text-foreground">
-              PronoMatch no recopila, procesa ni almacena datos de tarjetas
+              Reymar no recopila, procesa ni almacena datos de tarjetas
               de crédito o débito.
             </span>
           </li>
@@ -92,7 +92,7 @@ export default function PrivacyPolicyPage() {
             <span className="font-semibold text-foreground">
               Información NO recopilada:
             </span>{" "}
-            PronoMatch NO rastrea ni almacena su ubicación geográfica
+            Reymar NO rastrea ni almacena su ubicación geográfica
             precisa, lista de contactos, archivos multimedia ni actividad de
             navegación fuera de la Aplicación.
           </li>
@@ -101,7 +101,7 @@ export default function PrivacyPolicyPage() {
 
       <Section title="3. Aclaración sobre Juegos de Azar y Apuestas">
         <p>
-          PronoMatch{" "}
+          Reymar{" "}
           <span className="font-semibold text-foreground">
             NO es una plataforma de apuestas deportivas ni un casino en
             línea
@@ -226,7 +226,7 @@ export default function PrivacyPolicyPage() {
 
       <Section title="7. Menores de Edad">
         <p>
-          PronoMatch está concebida para usuarios mayores de 13 años (o la
+          Reymar está concebida para usuarios mayores de 13 años (o la
           edad mínima legal exigida en su país de residencia para el uso de
           servicios digitales). No recopilamos a sabiendas información de
           menores de edad sin el consentimiento de sus padres o tutores.
@@ -240,10 +240,10 @@ export default function PrivacyPolicyPage() {
           Portabilidad de sus datos personales enviando un mensaje expreso a
           nuestro correo oficial de privacidad:{" "}
           <a
-            href="mailto:privacidad@pronomatch.app"
+            href={`mailto:${PRIVACY_EMAIL}`}
             className="font-semibold text-accent hover:underline"
           >
-            privacidad@pronomatch.app
+            {PRIVACY_EMAIL}
           </a>
           .
         </p>
@@ -260,10 +260,10 @@ export default function PrivacyPolicyPage() {
               Correo electrónico:
             </span>{" "}
             <a
-              href="mailto:privacidad@pronomatch.app"
+              href={`mailto:${PRIVACY_EMAIL}`}
               className="font-semibold text-accent hover:underline"
             >
-              privacidad@pronomatch.app
+              {PRIVACY_EMAIL}
             </a>
           </li>
           <li>
@@ -271,10 +271,10 @@ export default function PrivacyPolicyPage() {
               Soporte General:
             </span>{" "}
             <a
-              href="mailto:soporte@pronomatch.app"
+              href={`mailto:${SUPPORT_EMAIL}`}
               className="font-semibold text-accent hover:underline"
             >
-              soporte@pronomatch.app
+              {SUPPORT_EMAIL}
             </a>
           </li>
           <li>
@@ -282,10 +282,10 @@ export default function PrivacyPolicyPage() {
               Sitio Web:
             </span>{" "}
             <a
-              href="https://pronomatch.app"
+              href={SITE_URL}
               className="font-semibold text-accent hover:underline"
             >
-              https://pronomatch.app
+              {SITE_URL}
             </a>
           </li>
         </ul>

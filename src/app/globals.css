@@ -7,9 +7,10 @@
   --border-subtle: #232c52;
   --foreground: #f5f6fa;
   --muted: #9ca3af;
-  --accent: #ff0000;
-  --accent-hover: #d90000;
-  --accent-secondary: #ff7200;
+  --accent: #d4c4a8;
+  --accent-hover: #e8d5b0;
+  --accent-secondary: #f5e6c8;
+  --on-accent: #0a1128;
 }
 
 @theme inline {
@@ -22,6 +23,7 @@
   --color-accent: var(--accent);
   --color-accent-hover: var(--accent-hover);
   --color-accent-secondary: var(--accent-secondary);
+  --color-on-accent: var(--on-accent);
   --font-sans: var(--font-inter);
   --font-heading: var(--font-montserrat);
 }
@@ -49,8 +51,8 @@ h6 {
 .gradient-glow {
   background: radial-gradient(
       60% 60% at 80% 20%,
-      rgba(255, 0, 0, 0.16) 0%,
-      rgba(255, 0, 0, 0) 60%
+      rgba(212, 196, 168, 0.18) 0%,
+      rgba(212, 196, 168, 0) 60%
     ),
     radial-gradient(
       50% 50% at 10% 10%,

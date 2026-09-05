@@ -5,12 +5,12 @@ import { ChevronDown } from "lucide-react";
 
 const FAQ_ITEMS = [
   {
-    question: "¿PronoMatch es una app de apuestas?",
+    question: "¿Reymar es una app de apuestas?",
     answer:
-      "No. PronoMatch es un SaaS deportivo de entretenimiento y habilidad. No manejamos dinero real, apuestas ni casas de apuestas: se trata de demostrar tus conocimientos de fútbol pronosticando resultados y sumando puntos.",
+      "No. Reymar es un SaaS deportivo de entretenimiento y habilidad. No manejamos dinero real, apuestas ni casas de apuestas: se trata de demostrar tus conocimientos de fútbol pronosticando resultados y sumando puntos.",
   },
   {
-    question: "¿Es totalmente gratis descargar y usar PronoMatch?",
+    question: "¿Es totalmente gratis descargar y usar Reymar?",
     answer:
       "Sí. Puedes descargar la aplicación y participar en las modalidades generales de pronóstico de forma gratuita (Modo Free). Contamos con funciones especiales y la creación de ligas privadas avanzadas bajo un modelo Premium opcional.",
   },
@@ -29,17 +29,17 @@ const FAQ_ITEMS = [
   {
     question: "¿Qué torneos cubren?",
     answer:
-      "Actualmente cubrimos la UEFA Champions League, la Copa Libertadores y la Copa de Campeones de la Concacaf, con más torneos en camino.",
+      "Actualmente cubrimos la Champions League, la Copa Libertadores y la Copa de Campeones, con más copas en camino.",
   },
   {
     question: "¿Cómo se calculan los puntos en los partidos?",
     answer:
-      "El sistema evalúa con precisión matemática tanto el marcador exacto como la tendencia del partido (ganador, perdedor o empate). Además, contamos con categorías especiales de predicción (como Reymar o Bracket según el torneo) para que cada acierto estratégico sume de forma automatizada e inmutable.",
+      "El sistema evalúa con precisión matemática tanto el marcador exacto como la tendencia del partido (ganador, perdedor o empate). Además, la app incluye categorías especiales de predicción —la modalidad Reymar (marcadores y tendencias) o Bracket, según el torneo— para que cada acierto estratégico sume de forma automatizada e inmutable.",
   },
   {
     question: "¿Debo ingresar los resultados de los partidos manualmente?",
     answer:
-      "Para nada. PronoMatch cuenta con una arquitectura automatizada conectada a fuentes de datos oficiales, lo que garantiza que los marcadores y la tabla de posiciones se actualicen en tiempo real al finalizar cada encuentro.",
+      "Para nada. Reymar cuenta con una arquitectura automatizada conectada a fuentes de datos oficiales, lo que garantiza que los marcadores y la tabla de posiciones se actualicen en tiempo real al finalizar cada encuentro.",
   },
 ];
 

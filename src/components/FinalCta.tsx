@@ -6,7 +6,7 @@ export default function FinalCta() {
       <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
         <h2 className="text-balance text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
           Tu próxima jornada empieza en{" "}
-          <span className="text-accent">PronoMatch</span>
+          <span className="text-accent">Reymar</span>
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-lg text-muted">
           Descarga la app gratis y reta a tus amigos en la liga de

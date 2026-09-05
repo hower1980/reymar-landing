@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import { Montserrat, Inter } from "next/font/google";
-import { SITE_URL } from "@/lib/site-config";
+import {
+  APP_NAME,
+  APP_SUBTITLE,
+  KEYWORDS,
+  PROMO_DESCRIPTION,
+  SITE_NAME,
+  SITE_URL,
+} from "@/lib/site-config";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -14,43 +21,27 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const APP_NAME = "PronoMatch: Pronósticos Fútbol";
-const PROMO_DESCRIPTION =
-  "¡Compite con tus amigos en la UEFA Champions League, Copa Libertadores y Concacaf! Haz tus pronósticos, crea ligas privadas y demuestra quién sabe más de fútbol.";
-
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${APP_NAME} — Ligas privadas y quinielas`,
-    template: `%s | PronoMatch`,
+    default: `${APP_NAME} — ${APP_SUBTITLE}`,
+    template: `%s | ${SITE_NAME}`,
   },
   description: PROMO_DESCRIPTION,
-  applicationName: "PronoMatch",
-  keywords: [
-    "pronosticos",
-    "futbol",
-    "polla",
-    "porra",
-    "quiniela",
-    "champions",
-    "libertadores",
-    "concacaf",
-    "ligas",
-    "resultados",
-    "marcador",
-  ],
+  applicationName: SITE_NAME,
+  keywords: KEYWORDS,
   category: "Deportes",
   openGraph: {
-    title: `${APP_NAME} — Ligas privadas y quinielas`,
+    title: `${APP_NAME} — ${APP_SUBTITLE}`,
     description: PROMO_DESCRIPTION,
     url: SITE_URL,
-    siteName: "PronoMatch",
+    siteName: SITE_NAME,
     locale: "es_ES",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: `${APP_NAME} — Ligas privadas y quinielas`,
+    title: `${APP_NAME} — ${APP_SUBTITLE}`,
     description: PROMO_DESCRIPTION,
   },
   alternates: {

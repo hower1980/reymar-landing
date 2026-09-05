@@ -34,7 +34,7 @@ const GLOBAL_CATEGORIES = [
 const TOURNAMENT_RULES = [
   {
     icon: Layers,
-    tournament: "UEFA Champions League",
+    tournament: "Champions League",
     description:
       "Domina la fase de liga prediciendo el codiciado Top 8, la zona de playoff y los cruces definitivos a octavos.",
   },
@@ -46,7 +46,7 @@ const TOURNAMENT_RULES = [
   },
   {
     icon: Swords,
-    tournament: "Copa de Campeones Concacaf",
+    tournament: "Copa de Campeones",
     description:
       "Estrategia exprés: pronostica con precisión quirúrgica a los ganadores de la Ronda 1 para avanzar a octavos.",
   },
@@ -68,10 +68,10 @@ export default function GameCategories() {
             Domina cada categoría de juego
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted">
-            PronoMatch rompe los esquemas de las quinielas tradicionales. No
-            se trata solo de adivinar quién gana un partido: pon a prueba tu
-            visión estratégica compitiendo en categorías globales y
-            específicas de cada torneo.
+            Reymar rompe los esquemas de las quinielas tradicionales. No se
+            trata solo de adivinar quién gana un partido: pon a prueba tu
+            visión estratégica compitiendo en categorías globales —incluida
+            la modalidad Reymar de marcadores— y específicas de cada torneo.
           </p>
         </div>
 
@@ -106,7 +106,7 @@ export default function GameCategories() {
               Reglas de oro por competición
             </h3>
             <p className="mt-3 text-muted">
-              Cada torneo tiene su propio formato: PronoMatch se adapta para
+              Cada torneo tiene su propio formato: Reymar se adapta para
               exprimir al máximo tu estrategia.
             </p>
           </div>

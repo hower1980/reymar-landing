@@ -2,7 +2,7 @@ import { Trophy } from "lucide-react";
 
 const TOURNAMENTS = [
   {
-    name: "UEFA Champions League",
+    name: "Champions League",
     region: "Europa",
   },
   {
@@ -10,18 +10,18 @@ const TOURNAMENTS = [
     region: "Sudamérica",
   },
   {
-    name: "Copa de Campeones Concacaf",
+    name: "Copa de Campeones",
     region: "Norte, Centroamérica y Caribe",
   },
 ];
 
 export default function Tournaments() {
   return (
-    <section id="torneos" className="scroll-mt-20 py-20 sm:py-28">
+    <section id="copas" className="scroll-mt-20 py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-balance text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
-            Torneos que cubrimos
+            Copas que cubrimos
           </h2>
           <p className="mt-4 text-lg text-muted">
             Pronostica en las competiciones de clubes más importantes del

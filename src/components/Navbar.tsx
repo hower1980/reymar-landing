@@ -6,7 +6,7 @@ import Logo from "./Logo";
 
 const NAV_LINKS = [
   { label: "Cómo funciona", href: "#como-funciona" },
-  { label: "Torneos", href: "#torneos" },
+  { label: "Copas", href: "#copas" },
   { label: "Categorías", href: "#categorias" },
   { label: "Preguntas frecuentes", href: "#faq" },
 ];
@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <header
       id="top"
-      className="sticky top-0 z-50 border-b border-border-subtle/60 bg-background/80 backdrop-blur-md"
+      className="sticky top-0 z-50 border-b border-border-subtle/60 bg-background"
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <Logo />
@@ -36,7 +36,7 @@ export default function Navbar() {
 
         <a
           href="#descargar"
-          className="hidden rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white shadow-[0_0_20px_rgba(255,0,0,0.3)] transition-all hover:bg-accent-hover hover:shadow-[0_0_28px_rgba(255,0,0,0.45)] md:inline-block"
+          className="hidden rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-on-accent shadow-[0_0_20px_rgba(212,196,168,0.3)] transition-all hover:bg-accent-hover hover:shadow-[0_0_28px_rgba(212,196,168,0.45)] md:inline-block"
         >
           Descargar app
         </a>
@@ -68,7 +68,7 @@ export default function Navbar() {
             <a
               href="#descargar"
               onClick={() => setIsOpen(false)}
-              className="mt-2 rounded-full bg-accent px-5 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-accent-hover"
+              className="mt-2 rounded-full bg-accent px-5 py-3 text-center text-sm font-semibold text-on-accent transition-colors hover:bg-accent-hover"
             >
               Descargar app
             </a>
