@@ -1,22 +1,22 @@
 export const SITE_URL = "https://getreymar.com";
 export const SITE_NAME = "Reymar";
-export const APP_NAME = "Reymar: Pronósticos Fútbol";
-export const APP_SUBTITLE = "Ligas privadas y quinielas";
+export const APP_NAME = "Reymar";
+export const APP_SUBTITLE = "Mesas de pronósticos";
 export const SUPPORT_EMAIL = "soporte@getreymar.com";
 export const PRIVACY_EMAIL = "privacidad@getreymar.com";
 export const PROMO_DESCRIPTION =
-  "¡Compite con tus amigos en la UEFA Champions League, Copa Libertadores y Concacaf! Haz tus pronósticos, crea ligas privadas y demuestra quién sabe más de fútbol.";
+  "Crea una mesa gratis con tus amigos, pronostica Reymar antes del corte y, si quieres, desbloquea Temporada en esa mesa. Sin apuestas ni dinero real.";
 export const KEYWORDS = [
   "reymar",
   "pronosticos",
   "futbol",
-  "polla",
+  "mesa",
   "porra",
   "quiniela",
   "champions",
-  "libertadores",
-  "concacaf",
-  "ligas",
-  "resultados",
-  "marcador",
+  "temporada",
+  "pleno",
 ];
+export const DEEP_LINK_JOIN = (code: string) =>
+  `reymar://leagues/join?code=${encodeURIComponent(code)}`;
+export const MESA_CODE_PATTERN = /^[A-Za-z0-9]{6}$/;

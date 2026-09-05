@@ -38,7 +38,7 @@ export default function Navbar() {
           href="#descargar"
           className="hidden rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-on-accent shadow-[0_0_20px_rgba(212,196,168,0.3)] transition-all hover:bg-accent-hover hover:shadow-[0_0_28px_rgba(212,196,168,0.45)] md:inline-block"
         >
-          Descargar app
+          Próximamente
         </a>
 
         <button
@@ -70,7 +70,7 @@ export default function Navbar() {
               onClick={() => setIsOpen(false)}
               className="mt-2 rounded-full bg-accent px-5 py-3 text-center text-sm font-semibold text-on-accent transition-colors hover:bg-accent-hover"
             >
-              Descargar app
+              Próximamente
             </a>
           </div>
         </div>

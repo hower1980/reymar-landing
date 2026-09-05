@@ -8,12 +8,17 @@ export default function Footer() {
   return (
     <footer className="border-t border-border-subtle/60 bg-surface/40">
       <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
-        <div className="flex flex-col items-center gap-8 sm:flex-row sm:items-start sm:justify-between">
+        <div className="rounded-2xl border border-border-subtle bg-background px-5 py-4 text-center text-sm leading-relaxed text-muted sm:text-left">
+          Reymar no está afiliado a UEFA, CONMEBOL, Concacaf ni FIFA. No es
+          una casa de apuestas: no hay prize pool ni dinero real.
+        </div>
+
+        <div className="mt-10 flex flex-col items-center gap-8 sm:flex-row sm:items-start sm:justify-between">
           <div className="flex flex-col items-center gap-3 sm:items-start">
             <Logo size="sm" />
             <p className="max-w-xs text-center text-sm text-muted sm:text-left">
-              El SaaS de pronósticos de fútbol para competir con amigos en
-              ligas privadas y públicas.
+              Mesas de pronósticos. Gratis para el grupo; Temporada opcional
+              por mesa.
             </p>
           </div>
 
@@ -44,9 +49,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 border-t border-border-subtle/60 pt-6 text-center text-xs text-muted sm:text-left">
-          © {year} Reymar. Todos los derechos reservados. Reymar es una
-          plataforma de entretenimiento deportivo y no está afiliada con la
-          UEFA, CONMEBOL ni CONCACAF.
+          © {year} Reymar. Todos los derechos reservados.
         </div>
       </div>
     </footer>

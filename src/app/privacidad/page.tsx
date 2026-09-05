@@ -5,7 +5,7 @@ import { PRIVACY_EMAIL, SITE_URL, SUPPORT_EMAIL } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Política de Privacidad",
   description:
-    "Conoce cómo Reymar recopila, usa y protege tus datos personales a través de Supabase, Expo y RevenueCat.",
+    "Cómo Reymar trata tus datos: cuenta, mesa, Temporada y eliminación de cuenta. Sin apuestas ni dinero real.",
   alternates: {
     canonical: `${SITE_URL}/privacidad`,
   },
@@ -34,55 +34,59 @@ export default function PrivacyPolicyPage() {
       <Section title="1. Introducción">
         <p>
           Reymar (&quot;la Aplicación&quot;, &quot;el Servicio&quot;,
-          &quot;nosotros&quot;) es una plataforma de Software como Servicio
-          (SaaS) orientada al entretenimiento social y a la gestión de ligas
-          privadas de pronósticos deportivos de fútbol. La presente Política
-          de Privacidad describe cómo recopilamos, utilizamos, almacenamos y
-          protegemos la información personal de nuestros usuarios
-          (&quot;el Usuario&quot; o &quot;usted&quot;). Al descargar, acceder
-          o utilizar Reymar, usted acepta las prácticas descritas en esta
-          política.
+          &quot;nosotros&quot;) es una aplicación de entretenimiento social
+          para pronósticos de fútbol entre amigos. El objeto social es la{" "}
+          <span className="font-semibold text-foreground">mesa</span>: un
+          grupo privado que se crea o se une con un código, sin peaje para
+          abrirla. Esta Política describe cómo recopilamos, usamos,
+          almacenamos y protegemos la información personal
+          (&quot;el Usuario&quot; o &quot;usted&quot;). Al usar Reymar,
+          acepta estas prácticas.
         </p>
       </Section>
 
       <Section title="2. Datos que recopilamos">
         <p>
-          Recopilamos únicamente la información estrictamente necesaria para
-          la prestación y optimización del servicio:
+          Recopilamos únicamente la información necesaria para prestar el
+          servicio:
         </p>
         <ul className="list-disc space-y-2 pl-6">
           <li>
             <span className="font-semibold text-foreground">
-              Datos de Cuenta y Autenticación:
+              Datos de cuenta y autenticación:
             </span>{" "}
             correo electrónico, nombre de usuario y contraseña cifrada
-            (gestionados mediante la infraestructura de autenticación segura
-            de Supabase Auth).
+            (Supabase Auth). Ghost Prediction permite un pronóstico de
+            prueba sin cuenta; pedimos registro cuando guardas de verdad
+            para entrar al ranking.
           </li>
           <li>
             <span className="font-semibold text-foreground">
-              Datos de Actividad del Juego:
+              Datos de actividad:
             </span>{" "}
-            pronósticos ingresados, fechas de envío, puntuaciones obtenidas,
-            registros de auditoría de puntos, historial de membresía y
-            administración de ligas privadas.
+            pronósticos (Reymar, campañas y demás modalidades de la mesa),
+            fechas de envío, puntuaciones, historial de membresía y
+            administración de mesas.
           </li>
           <li>
             <span className="font-semibold text-foreground">
-              Datos Técnicos y de Dispositivo:
+              Datos técnicos:
             </span>{" "}
-            identificadores únicos del dispositivo, sistema operativo,
-            versión de la aplicación y tokens de notificaciones push (Expo
-            Notifications) utilizados exclusivamente para emitir alertas
-            sobre fechas límite de pronósticos y novedades de tus ligas.
+            identificadores de dispositivo, sistema operativo, versión de la
+            aplicación y tokens de notificaciones push (Expo) para avisos
+            de corte y actividad de tu mesa.
           </li>
           <li>
             <span className="font-semibold text-foreground">
-              Datos de Transacciones y Compras:
+              Datos de transacciones:
             </span>{" "}
-            información sobre el estado de suscripción o paquetes de ligas
-            creadas, procesada y autenticada vía RevenueCat y las plataformas
-            oficiales Apple App Store y Google Play Store.{" "}
+            estado de la{" "}
+            <span className="font-semibold text-foreground">Temporada</span>{" "}
+            (compra anual dentro de la app, por mesa), validado vía
+            RevenueCat y las tiendas Apple App Store y Google Play. El{" "}
+            <span className="font-semibold text-foreground">Club</span> se
+            da de alta de forma manual, fuera del flujo de compras
+            dentro de la app del consumidor.{" "}
             <span className="font-semibold text-foreground">
               Reymar no recopila, procesa ni almacena datos de tarjetas
               de crédito o débito.
@@ -90,115 +94,113 @@ export default function PrivacyPolicyPage() {
           </li>
           <li>
             <span className="font-semibold text-foreground">
-              Información NO recopilada:
+              Información no recopilada:
             </span>{" "}
-            Reymar NO rastrea ni almacena su ubicación geográfica
-            precisa, lista de contactos, archivos multimedia ni actividad de
-            navegación fuera de la Aplicación.
+            no rastreamos ni almacenamos ubicación precisa, contactos del
+            teléfono, archivos multimedia ni navegación fuera de la
+            Aplicación.
           </li>
         </ul>
       </Section>
 
-      <Section title="3. Aclaración sobre Juegos de Azar y Apuestas">
+      <Section title="3. No es apuestas">
         <p>
           Reymar{" "}
           <span className="font-semibold text-foreground">
-            NO es una plataforma de apuestas deportivas ni un casino en
-            línea
+            no es una plataforma de apuestas ni un casino
           </span>
-          . El cobro de funciones dentro de la aplicación corresponde
-          exclusivamente al acceso a características de software mejoradas
-          (SaaS), como la ampliación del cupo de participantes en ligas
-          privadas o estadísticas avanzadas. No se permite, facilita ni
-          realiza la apuesta de dinero real ni la entrega de premios en
-          efectivo a través de la infraestructura de la Aplicación.
+          . No hay prize pool ni dinero real. El único cobro al consumidor
+          en tienda es Temporada: un pago anual por mesa que desbloquea
+          funciones de software en esa mesa (campañas, Versus, Gráfica,
+          Pleno sin watermark y ranking combinado del año). No vendemos
+          cupos ni un peaje para crear el grupo. No se permite, facilita ni
+          realiza apuesta de dinero real ni entrega de premios en efectivo
+          a través de la Aplicación.
         </p>
       </Section>
 
       <Section title="4. Cómo usamos la información">
-        <p>Utilizamos la información recopilada para:</p>
+        <p>Usamos la información para:</p>
         <ol className="list-decimal space-y-2 pl-6">
-          <li>Autenticar su identidad y mantener activa su sesión de usuario.</li>
+          <li>Autenticar su identidad y mantener la sesión.</li>
           <li>
-            Calcular en tiempo real puntuaciones, posiciones en
-            clasificaciones generales y desempates matemáticos.
+            Calcular puntuaciones y clasificaciones de mesa cuando el
+            partido cierra (marcadores automáticos al cierre; no
+            garantizamos difusión en vivo).
           </li>
           <li>
-            Notificar los recordatorios de cierre de jornadas de pronóstico y
-            actividad relevante en ligas privadas.
+            Notificar el corte de pronóstico y actividad relevante de su
+            mesa.
           </li>
-          <li>Procesar y activar las funciones Premium adquiridas por el usuario.</li>
           <li>
-            Monitorear el rendimiento técnico, solucionar errores de
-            software y prevenir conductas fraudulentas o abuso de la API.
+            Activar Temporada en la mesa que corresponda y registrar el
+            alta manual de Club cuando exista.
+          </li>
+          <li>
+            Monitorear el rendimiento técnico, corregir errores y prevenir
+            abuso.
           </li>
         </ol>
       </Section>
 
-      <Section title="5. Proveedores de Servicios y Subencargados del Tratamiento">
+      <Section title="5. Proveedores">
         <p>
-          Para la operación del Servicio, compartimos datos mínimos
-          requeridos con los siguientes proveedores de infraestructura
-          tecnológica:
+          Compartimos el mínimo necesario con estos encargados de
+          tratamiento:
         </p>
         <ul className="list-disc space-y-2 pl-6">
           <li>
             <span className="font-semibold text-foreground">
               Supabase Inc.:
             </span>{" "}
-            gestión de base de datos relacional PostgreSQL, funciones de
-            backend (Edge Functions) y autenticación segura de usuarios.
+            base de datos, backend y autenticación.
           </li>
           <li>
             <span className="font-semibold text-foreground">
               Expo / 650 Industries Inc.:
             </span>{" "}
-            infraestructura de compilación y servicio de notificaciones push
-            móviles.
+            compilación y notificaciones push.
           </li>
           <li>
             <span className="font-semibold text-foreground">
               RevenueCat Inc.:
             </span>{" "}
-            validación de recibos de compras dentro de la app (In-App
-            Purchases) y estado de membresías.
+            validación de recibos de compras dentro de la app (Temporada)
+            y estado de esas compras.
           </li>
           <li>
             <span className="font-semibold text-foreground">
-              API-Football (API-Sports):
+              Proveedor de calendarios y marcadores:
             </span>{" "}
-            proveedor externo de resultados deportivos y calendarios (no
-            recibe ningún dato personal de los usuarios).
+            resultados y fixtures deportivos. No recibe datos personales
+            de los usuarios.
           </li>
           <li>
             <span className="font-semibold text-foreground">
               Apple Inc. / Google LLC:
             </span>{" "}
-            procesamiento y cobro de transacciones en las tiendas oficiales.
+            cobro de Temporada en las tiendas, cuando esté disponible.
           </li>
         </ul>
         <p>
           No vendemos, alquilamos ni comercializamos datos personales con
-          terceros bajo ninguna circunstancia.
+          terceros.
         </p>
       </Section>
 
-      <Section title="6. Retención y Eliminación de Datos">
+      <Section title="6. Retención y eliminación">
         <ul className="list-disc space-y-2 pl-6">
           <li>
             <span className="font-semibold text-foreground">
-              Período de Conservación:
+              Conservación:
             </span>{" "}
-            los datos se conservan mientras la cuenta del Usuario permanezca
-            activa en la plataforma.
+            mientras la cuenta permanezca activa.
           </li>
           <li>
             <span className="font-semibold text-foreground">
-              Derecho de Eliminación (Derecho al Olvido):
+              Borrar cuenta:
             </span>{" "}
-            el Usuario puede solicitar y ejecutar la eliminación completa e
-            irreversible de su cuenta en cualquier momento accediendo dentro
-            de la aplicación a:{" "}
+            puede solicitar y ejecutar la eliminación desde{" "}
             <span className="font-semibold text-foreground">
               Mi Perfil → Ajustes → Eliminar Cuenta
             </span>
@@ -206,39 +208,35 @@ export default function PrivacyPolicyPage() {
           </li>
           <li>
             <span className="font-semibold text-foreground">
-              Efectos de la Eliminación:
+              Efectos:
             </span>{" "}
-            la eliminación de la cuenta borra de forma permanente el perfil,
-            el historial de pronósticos y las marcas de puntos. En caso de
-            que el Usuario sea el creador/administrador de una liga privada,
-            la liga se cerrará para el resto de miembros.
+            se borra el perfil, el historial de pronósticos y las marcas
+            de puntos. Si el Usuario es admin de una mesa, esa mesa se
+            cierra para el resto de miembros.
           </li>
           <li>
             <span className="font-semibold text-foreground">
-              Resguardos de Seguridad:
+              Copias de seguridad:
             </span>{" "}
-            las copias de seguridad del sistema (backups) purgan los datos
-            residuales en un período máximo de 30 días posteriores a la
-            solicitud de eliminación.
+            los backups purgan residuos en un máximo de 30 días tras la
+            eliminación.
           </li>
         </ul>
       </Section>
 
-      <Section title="7. Menores de Edad">
+      <Section title="7. Menores">
         <p>
-          Reymar está concebida para usuarios mayores de 13 años (o la
-          edad mínima legal exigida en su país de residencia para el uso de
-          servicios digitales). No recopilamos a sabiendas información de
-          menores de edad sin el consentimiento de sus padres o tutores.
+          Reymar está concebida para mayores de 13 años (o la edad mínima
+          legal de su país para servicios digitales). No recopilamos a
+          sabiendas datos de menores sin consentimiento de padres o
+          tutores.
         </p>
       </Section>
 
-      <Section title="8. Derechos de los Usuarios (ARCO / GDPR)">
+      <Section title="8. Derechos (ARCO / GDPR)">
         <p>
-          Dependiendo de su lugar de residencia, el Usuario puede ejercer sus
-          derechos de Acceso, Rectificación, Cancelación, Oposición y
-          Portabilidad de sus datos personales enviando un mensaje expreso a
-          nuestro correo oficial de privacidad:{" "}
+          Puede ejercer acceso, rectificación, cancelación, oposición y
+          portabilidad escribiendo a{" "}
           <a
             href={`mailto:${PRIVACY_EMAIL}`}
             className="font-semibold text-accent hover:underline"
@@ -249,16 +247,19 @@ export default function PrivacyPolicyPage() {
         </p>
       </Section>
 
-      <Section title="9. Contacto">
+      <Section title="9. Escudos Cero y no afiliación">
         <p>
-          Para cualquier duda, aclaración o ejercicio de derechos sobre la
-          presente Política de Privacidad, puede contactarnos en:
+          Reymar no está afiliada a UEFA, CONMEBOL, Concacaf ni FIFA, ni
+          a clubes o federaciones. Usamos acrónimos, nombres descriptivos
+          y gráficos genéricos (Escudos Cero): ningún escudo o logo
+          implica patrocinio o licencia.
         </p>
+      </Section>
+
+      <Section title="10. Contacto">
         <ul className="list-disc space-y-2 pl-6">
           <li>
-            <span className="font-semibold text-foreground">
-              Correo electrónico:
-            </span>{" "}
+            Privacidad:{" "}
             <a
               href={`mailto:${PRIVACY_EMAIL}`}
               className="font-semibold text-accent hover:underline"
@@ -267,9 +268,7 @@ export default function PrivacyPolicyPage() {
             </a>
           </li>
           <li>
-            <span className="font-semibold text-foreground">
-              Soporte General:
-            </span>{" "}
+            Soporte:{" "}
             <a
               href={`mailto:${SUPPORT_EMAIL}`}
               className="font-semibold text-accent hover:underline"
@@ -278,9 +277,7 @@ export default function PrivacyPolicyPage() {
             </a>
           </li>
           <li>
-            <span className="font-semibold text-foreground">
-              Sitio Web:
-            </span>{" "}
+            Web:{" "}
             <a
               href={SITE_URL}
               className="font-semibold text-accent hover:underline"

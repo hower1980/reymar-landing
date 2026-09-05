@@ -15,18 +15,17 @@ export default function Hero() {
         <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
           <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-border-subtle bg-surface px-4 py-1.5 text-xs font-medium text-muted">
             <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-            El SaaS de pronósticos para verdaderos fanáticos
+            Porra con tu mesa · Reymar + campañas
           </span>
 
           <h1 className="text-balance text-4xl font-extrabold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            La experiencia definitiva de{" "}
-            <span className="text-accent">pronósticos de fútbol</span>
+            Reymar —{" "}
+            <span className="text-accent">Mesas de pronósticos</span>
           </h1>
 
           <p className="mt-6 max-w-xl text-balance text-lg leading-relaxed text-muted">
-            Crea tu propia liga, invita a tu grupo y compite a través 
-            de múltiples categorías exclusivas y funciones especiales.
-            No es solo predecir resultados, es liderar el ranking.
+            Mesa de amigos gratis. Temporada opcional, un pago anual por mesa,
+            para campañas, Versus, Gráfica y Pleno.
           </p>
 
           <div className="mt-10">
@@ -35,13 +34,18 @@ export default function Hero() {
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-x-4 gap-y-3 text-sm text-muted sm:gap-x-6 lg:justify-start">
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-foreground">3</span>
-              <span>Copas oficiales</span>
+              <span className="text-xl font-bold text-foreground">Gratis</span>
+              <span>Mesa de amigos</span>
             </div>
             <div className="hidden h-8 w-px bg-border-subtle sm:block" />
             <div className="flex flex-col">
               <span className="text-xl font-bold text-foreground">100%</span>
               <span>Habilidad, no azar</span>
+            </div>
+            <div className="hidden h-8 w-px bg-border-subtle sm:block" />
+            <div className="flex flex-col">
+              <span className="text-xl font-bold text-foreground">Opcional</span>
+              <span>Temporada por mesa</span>
             </div>
           </div>
         </div>

@@ -1,17 +1,27 @@
-import { Trophy } from "lucide-react";
-
-const TOURNAMENTS = [
+const COPAS = [
   {
     name: "Champions League",
     region: "Europa",
+    status: "Lab",
+    note: "Disponible para jugar en lab.",
   },
   {
     name: "Copa Libertadores",
     region: "Sudamérica",
+    status: "En camino",
+    note: "Estructura lista; aún no jugable.",
   },
   {
     name: "Copa de Campeones",
     region: "Norte, Centroamérica y Caribe",
+    status: "En camino",
+    note: "Estructura lista; aún no jugable.",
+  },
+  {
+    name: "Copa Oro",
+    region: "Concacaf (selecciones)",
+    status: "En camino",
+    note: "Estructura lista; aún no jugable.",
   },
 ];
 
@@ -21,27 +31,36 @@ export default function Tournaments() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-balance text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
-            Copas que cubrimos
+            Copas
           </h2>
           <p className="mt-4 text-lg text-muted">
-            Pronostica en las competiciones de clubes más importantes del
-            planeta.
+            Hoy se juega Champions en lab. El resto existe como estructura
+            inactiva.
           </p>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-3">
-          {TOURNAMENTS.map((tournament) => (
+        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {COPAS.map((copa) => (
             <div
-              key={tournament.name}
-              className="group flex flex-col items-center rounded-2xl border border-border-subtle bg-surface px-6 py-10 text-center transition-colors hover:border-accent/50"
+              key={copa.name}
+              className="flex flex-col rounded-2xl border border-border-subtle bg-surface px-6 py-8"
             >
-              <span className="flex h-14 w-14 items-center justify-center rounded-full bg-accent/10 transition-colors group-hover:bg-accent/20">
-                <Trophy className="h-7 w-7 text-accent" strokeWidth={1.75} />
+              <span
+                className={`inline-flex w-fit rounded-full px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide ${
+                  copa.status === "Lab"
+                    ? "bg-accent/15 text-accent"
+                    : "bg-white/5 text-muted"
+                }`}
+              >
+                {copa.status}
               </span>
-              <h3 className="mt-5 text-base font-bold text-foreground">
-                {tournament.name}
+              <h3 className="mt-4 text-base font-bold text-foreground">
+                {copa.name}
               </h3>
-              <p className="mt-1.5 text-sm text-muted">{tournament.region}</p>
+              <p className="mt-1 text-sm text-muted">{copa.region}</p>
+              <p className="mt-3 text-sm leading-relaxed text-muted">
+                {copa.note}
+              </p>
             </div>
           ))}
         </div>

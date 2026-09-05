@@ -1,9 +1,9 @@
 import { Trophy, Users } from "lucide-react";
 
 const MATCHES = [
-  { home: "REA", away: "MUN", homeScore: 2, awayScore: 1, time: "Finalizado" },
-  { home: "BAR", away: "PSG", homeScore: 1, awayScore: 1, time: "Hoy 18:00" },
-  { home: "MCI", away: "BAY", homeScore: 3, awayScore: 0, time: "Hoy 20:30" },
+  { home: "AZL", away: "CRN", homeScore: 2, awayScore: 1, time: "Finalizado" },
+  { home: "VLT", away: "NBL", homeScore: 1, awayScore: 1, time: "Hoy 18:00" },
+  { home: "GRS", away: "MRA", homeScore: 3, awayScore: 0, time: "Hoy 20:30" },
 ];
 
 const LEADERBOARD = [
@@ -23,8 +23,8 @@ export default function PhoneMockup() {
         <div className="overflow-hidden rounded-[2.25rem] bg-surface">
           <div className="flex items-center justify-between px-5 pb-4 pt-8">
             <div>
-              <p className="text-[11px] font-medium text-muted">Liga Amigos FC</p>
-              <p className="text-sm font-bold text-foreground">Jornada 12</p>
+              <p className="text-[11px] font-medium text-muted">Mesa de amigos</p>
+              <p className="text-sm font-bold text-foreground">Reymar</p>
             </div>
             <span className="flex h-8 w-8 items-center justify-center rounded-full bg-accent/15">
               <Trophy className="h-4 w-4 text-accent" />

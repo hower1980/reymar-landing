@@ -1,54 +1,47 @@
-import { Target, Workflow, Crown, Footprints, Layers, Compass, Swords } from "lucide-react";
+import { Target, Workflow, Crown, Footprints, Star, Layers } from "lucide-react";
 
-const GLOBAL_CATEGORIES = [
+const CATEGORIES = [
   {
     icon: Target,
     title: "Reymar",
-    subtitle: "Marcadores y tendencias",
+    subtitle: "10 + 10 + 10",
     description:
-      "Pronostica el resultado exacto, la tendencia o los goles de cada partido de la competición. La precisión se paga con puntos.",
+      "Tendencia y marcador de cada partido. Es el núcleo de la mesa, con o sin Temporada.",
   },
   {
     icon: Workflow,
     title: "Bracket",
-    subtitle: "El cuadro final",
+    subtitle: "Cuadro",
     description:
-      "Vive la tensión máxima prediciendo a los 14 clasificados ronda a ronda, desde octavos hasta la gran final.",
+      "Predice clasificados ronda a ronda. El arranque depende de la copa (no siempre desde octavos).",
   },
   {
     icon: Crown,
-    title: "Podio y País Dominante",
-    subtitle: "La cumbre del torneo",
+    title: "Podio",
+    subtitle: "Campeón y subcampeón",
     description:
-      "Arriésgate a predecir al campeón, al subcampeón y a la nación que dominará la competición internacional.",
+      "Quién levanta el título y quién llega segundo. Con Temporada, suma al año de esa mesa.",
   },
   {
     icon: Footprints,
-    title: "Bota de Oro y MVP",
-    subtitle: "Las grandes estrellas",
+    title: "Bota de Oro",
+    subtitle: "Goleador",
     description:
-      "Demuestra que conoces a los protagonistas acertando al máximo goleador y al jugador más valioso de la temporada.",
+      "El máximo goleador de la copa. Campaña de Temporada, no un extra de pago para crear la mesa.",
   },
-];
-
-const TOURNAMENT_RULES = [
+  {
+    icon: Star,
+    title: "MVP",
+    subtitle: "Jugador más valioso",
+    description:
+      "Quién termina como el más decisivo del torneo. Misma lógica: Temporada en esa mesa.",
+  },
   {
     icon: Layers,
-    tournament: "Champions League",
+    title: "Top 8, Playoff y Grupos",
+    subtitle: "Según la copa",
     description:
-      "Domina la fase de liga prediciendo el codiciado Top 8, la zona de playoff y los cruces definitivos a octavos.",
-  },
-  {
-    icon: Compass,
-    tournament: "Copa Libertadores",
-    description:
-      "Pon a prueba tu lógica analizando las posiciones exactas de la fase de grupos y anticipando a los clasificados a octavos.",
-  },
-  {
-    icon: Swords,
-    tournament: "Copa de Campeones",
-    description:
-      "Estrategia exprés: pronostica con precisión quirúrgica a los ganadores de la Ronda 1 para avanzar a octavos.",
+      "Fase de liga, grupos o playoff según el formato de cada competición. Oro, por ejemplo, arranca más adelante.",
   },
 ];
 
@@ -62,21 +55,19 @@ export default function GameCategories() {
         <div className="mx-auto max-w-2xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-border-subtle bg-surface px-4 py-1.5 text-xs font-medium text-muted">
             <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-            Sistema multicategoría
+            Reymar y campañas
           </span>
           <h2 className="text-balance mt-5 text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
-            Domina cada categoría de juego
+            Cómo se pronostica
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted">
-            Reymar rompe los esquemas de las quinielas tradicionales. No se
-            trata solo de adivinar quién gana un partido: pon a prueba tu
-            visión estratégica compitiendo en categorías globales —incluida
-            la modalidad Reymar de marcadores— y específicas de cada torneo.
+            Reymar (tendencia + marcador) está siempre. Campañas, Versus,
+            Gráfica y Pleno se desbloquean con Temporada en esa mesa.
           </p>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {GLOBAL_CATEGORIES.map((category) => (
+        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {CATEGORIES.map((category) => (
             <div
               key={category.title}
               className="rounded-2xl border border-border-subtle bg-surface p-6 transition-colors hover:border-accent/50"
@@ -98,40 +89,6 @@ export default function GameCategories() {
               </p>
             </div>
           ))}
-        </div>
-
-        <div className="mt-20">
-          <div className="mx-auto max-w-2xl text-center">
-            <h3 className="text-balance text-2xl font-extrabold tracking-tight text-foreground sm:text-3xl">
-              Reglas de oro por competición
-            </h3>
-            <p className="mt-3 text-muted">
-              Cada torneo tiene su propio formato: Reymar se adapta para
-              exprimir al máximo tu estrategia.
-            </p>
-          </div>
-
-          <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-3">
-            {TOURNAMENT_RULES.map((rule) => (
-              <div
-                key={rule.tournament}
-                className="flex flex-col rounded-2xl border border-border-subtle bg-surface p-6"
-              >
-                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent/10">
-                  <rule.icon
-                    className="h-5 w-5 text-accent"
-                    strokeWidth={1.75}
-                  />
-                </span>
-                <h4 className="mt-4 text-sm font-bold uppercase tracking-wide text-foreground">
-                  {rule.tournament}
-                </h4>
-                <p className="mt-3 text-sm leading-relaxed text-muted">
-                  {rule.description}
-                </p>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>

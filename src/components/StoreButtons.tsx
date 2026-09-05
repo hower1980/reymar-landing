@@ -89,7 +89,7 @@ export function StoreButtons({
             showToast ? "opacity-100" : "opacity-0"
           }`}
         >
-          Próximamente disponible
+          Próximamente en App Store y Google Play
         </span>
       </div>
     </div>

@@ -7,39 +7,42 @@ const FAQ_ITEMS = [
   {
     question: "¿Reymar es una app de apuestas?",
     answer:
-      "No. Reymar es un SaaS deportivo de entretenimiento y habilidad. No manejamos dinero real, apuestas ni casas de apuestas: se trata de demostrar tus conocimientos de fútbol pronosticando resultados y sumando puntos.",
+      "No. No hay prize pool ni dinero real. Es una mesa de pronósticos: habilidad y puntos, no apuestas.",
   },
   {
-    question: "¿Es totalmente gratis descargar y usar Reymar?",
+    question: "¿Es gratis?",
     answer:
-      "Sí. Puedes descargar la aplicación y participar en las modalidades generales de pronóstico de forma gratuita (Modo Free). Contamos con funciones especiales y la creación de ligas privadas avanzadas bajo un modelo Premium opcional.",
+      "La mesa de amigos es gratis (cupo 25). Temporada es un pago anual opcional por mesa: desbloquea campañas, Versus, Gráfica, Pleno sin watermark y el ranking combinado del año en esa mesa. Sin Temporada sigues jugando Reymar partido a partido y el ranking de mesa solo Reymar. Las campañas también se pueden jugar para el ranking FREE mundial.",
   },
   {
-    question:
-      "¿Necesito crear una cuenta obligatoriamente para hacer mi primer pronóstico?",
+    question: "¿Cómo funciona la mesa?",
     answer:
-      "No de inmediato. Gracias a nuestra tecnología de pronóstico rápido (Ghost Prediction), puedes ingresar un marcador y evaluar tus opciones al instante. Solo te pediremos registrar tu cuenta al momento de guardar oficialmente tus datos para asegurar tu lugar en el ranking.",
+      "Un admin crea la mesa y comparte un código o un enlace HTTPS de invitación (getreymar.com/join/CODIGO). Con ese código te unes. El objeto es el grupo privado, no una liga de pago.",
   },
   {
-    question:
-      "¿Cómo funcionan las ligas privadas con amigos o compañeros de trabajo?",
+    question: "¿Necesito cuenta para el primer pronóstico?",
     answer:
-      "Es muy sencillo. Un usuario administrador crea la liga privada y comparte un código de invitación único. Con ese código, tus amigos o compañeros pueden unirse, competir en una tabla de clasificación exclusiva y medir quién sabe más de fútbol, con control total sobre los miembros del grupo.",
+      "No de inmediato. Con Ghost Prediction puedes meter un marcador y ver cómo queda. Pedimos cuenta cuando guardas de verdad para entrar al ranking.",
   },
   {
-    question: "¿Qué torneos cubren?",
+    question: "¿Qué copas hay?",
     answer:
-      "Actualmente cubrimos la Champions League, la Copa Libertadores y la Copa de Campeones, con más copas en camino.",
+      "Champions está en lab y se puede jugar. Libertadores, Copa de Campeones y Copa Oro existen como estructura inactiva: en camino, no jugables hoy.",
   },
   {
-    question: "¿Cómo se calculan los puntos en los partidos?",
+    question: "¿Hay que pagar para crear el grupo?",
     answer:
-      "El sistema evalúa con precisión matemática tanto el marcador exacto como la tendencia del partido (ganador, perdedor o empate). Además, la app incluye categorías especiales de predicción —la modalidad Reymar (marcadores y tendencias) o Bracket, según el torneo— para que cada acierto estratégico sume de forma automatizada e inmutable.",
+      "No. Crear o unirse a una mesa es gratis. Temporada no es un peaje para abrir la mesa: es un extra anual en esa mesa concreta.",
   },
   {
-    question: "¿Debo ingresar los resultados de los partidos manualmente?",
+    question: "¿Cómo se calcula Reymar?",
     answer:
-      "Para nada. Reymar cuenta con una arquitectura automatizada conectada a fuentes de datos oficiales, lo que garantiza que los marcadores y la tabla de posiciones se actualicen en tiempo real al finalizar cada encuentro.",
+      "Tendencia + marcador, 10+10+10 por partido. El corte cierra 2 horas antes. Con Temporada se suman las campañas de esa mesa al ranking del año.",
+  },
+  {
+    question: "¿Hay que cargar los resultados a mano?",
+    answer:
+      "No. Los marcadores se actualizan en automático cuando el partido cierra. No prometemos “tiempo real” ni “fuentes oficiales en producción” mientras el cron no esté vivo.",
   },
 ];
 
@@ -58,7 +61,7 @@ export default function Faq() {
             Preguntas frecuentes
           </h2>
           <p className="mt-4 text-lg text-muted">
-            Todo lo que necesitas saber antes de empezar a pronosticar.
+            Mesa, Temporada y copas, sin humo.
           </p>
         </div>
 

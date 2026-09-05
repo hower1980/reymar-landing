@@ -3,21 +3,21 @@ import { Users, Target, Trophy } from "lucide-react";
 const STEPS = [
   {
     icon: Users,
-    title: "Crea o únete a una liga",
+    title: "Crea o únete a una mesa",
     description:
-      "Arma tu liga privada en segundos e invita a tus amigos, o suma puntos en las ligas públicas de Reymar.",
+      "La mesa es gratis: hasta 25 personas (el admin cuenta). Créala o únete con un código de invitación.",
   },
   {
     icon: Target,
-    title: "Pronostica cada jornada",
+    title: "Pronostica Reymar antes del corte",
     description:
-      "Predice el marcador exacto de cada partido antes del pitazo inicial. Cuanto más preciso, más puntos sumas.",
+      "Tendencia + marcador (10+10+10) en cada partido. El corte cierra 2 horas antes del pitazo.",
   },
   {
     icon: Trophy,
-    title: "Compite en la clasificación",
+    title: "Compite en tu mesa",
     description:
-      "Sigue la tabla de posiciones en tiempo real y demuestra quién sabe más de fútbol en tu grupo.",
+      "Sin Temporada: Reymar partido a partido y ranking de mesa. Con Temporada en esa mesa: campañas, Versus, Gráfica y Pleno.",
   },
 ];
 
@@ -30,7 +30,7 @@ export default function HowItWorks() {
             Cómo funciona
           </h2>
           <p className="mt-4 text-lg text-muted">
-            Tres pasos para convertirte en el mejor pronosticador de tu liga.
+            El objeto es la mesa: un grupo privado, no una liga de pago.
           </p>
         </div>
 

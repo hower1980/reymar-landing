@@ -1,23 +1,23 @@
 const FEATURES = [
   {
-    title: "Ligas 100% privadas",
+    title: "Mesas privadas",
     description:
-      "Controla quién entra a tu liga con invitaciones y códigos de acceso exclusivos.",
+      "Gratis, cupo 25. Creas o te unes con un código. El admin decide quién entra.",
   },
   {
-    title: "Clasificación en tiempo real",
+    title: "Temporada opcional",
     description:
-      "Los puntos se actualizan automáticamente al finalizar cada partido.",
+      "Un pago anual por mesa. En esa mesa desbloqueas campañas, Versus, Gráfica, Pleno sin watermark y el ranking combinado del año.",
   },
   {
-    title: "Multi-torneo",
+    title: "Una mesa, el año",
     description:
-      "Sigue varias competiciones al mismo tiempo desde una sola app.",
+      "La mesa vive la temporada. Multi-copa no significa que hoy se jueguen todas: Champions está en lab; el resto, en camino.",
   },
   {
-    title: "Entretenimiento y habilidad",
+    title: "Sin apuestas",
     description:
-      "Un SaaS deportivo de pronósticos: sin apuestas, sin dinero en juego.",
+      "Entretenimiento y habilidad. No hay prize pool ni dinero real en juego.",
   },
 ];
 
@@ -27,11 +27,11 @@ export default function Features() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-balance text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
-            Todo lo que necesitas para competir
+            Lo que es — y lo que no
           </h2>
           <p className="mt-4 text-lg text-muted">
-            Diseñado para grupos de amigos, comunidades y fanáticos del fútbol
-            que quieren más que solo ver los partidos.
+            El objeto social es la mesa. Temporada no es un peaje para crear
+            el grupo.
           </p>
         </div>
 

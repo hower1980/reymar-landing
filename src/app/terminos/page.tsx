@@ -5,7 +5,7 @@ import { SITE_URL, SUPPORT_EMAIL } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Términos de Uso",
   description:
-    "Condiciones de uso de Reymar: plataforma SaaS de pronósticos de fútbol, sin apuestas ni premios en dinero real.",
+    "Términos de Reymar: mesas de pronósticos, Temporada por mesa, Club fuera de IAP, sin apuestas ni dinero real.",
   alternates: {
     canonical: `${SITE_URL}/terminos`,
   },
@@ -31,158 +31,152 @@ function Section({
 export default function TermsOfUsePage() {
   return (
     <LegalLayout title="Términos de Uso" updatedAt="5 de septiembre de 2026">
-      <Section title="1. Aceptación de los Términos">
+      <Section title="1. Aceptación">
         <p>
-          Al registrarse o hacer uso de Reymar, el Usuario declara haber
-          leído, comprendido y aceptado en su totalidad estos Términos y
-          Condiciones de Uso. Si el Usuario no está de acuerdo con alguno de
-          los puntos aquí expuestos, deberá abstenerse de utilizar la
+          Al registrarse o usar Reymar, el Usuario declara haber leído y
+          aceptado estos Términos. Si no está de acuerdo, no debe usar la
           Aplicación.
         </p>
       </Section>
 
-      <Section title="2. Naturaleza del Servicio y Ausencia de Apuestas">
+      <Section title="2. Naturaleza del servicio">
         <p>
-          Reymar es una plataforma digital de software (SaaS) concebida
-          exclusivamente con fines de entretenimiento social y recreativo.
+          Reymar es entretenimiento social. El objeto es la{" "}
+          <span className="font-semibold text-foreground">mesa</span> (grupo
+          privado), no una liga de pago. Crear o unirse a una mesa de
+          amigos es gratis (cupo 25; el admin cuenta).
         </p>
         <ol className="list-decimal space-y-2 pl-6">
           <li>
             <span className="font-semibold text-foreground">
-              No es una Casa de Apuestas:
+              No es una casa de apuestas:
             </span>{" "}
-            Reymar no es un operador de apuestas, no posee licencias de
-            juego de azar ni actúa como intermediario financiero para la
-            gestión de envites o apuestas.
+            Reymar no opera apuestas, no tiene licencia de juego de azar
+            ni intermedia envites. No hay prize pool ni dinero real.
           </li>
           <li>
             <span className="font-semibold text-foreground">
-              Sin Premios Monetarios:
+              Sin premios monetarios:
             </span>{" "}
-            la Aplicación no distribuye ni garantiza la entrega de premios en
-            metálico o especies. Cualquier acuerdo privado entre usuarios de
-            una liga sobre premios o reconocimientos externos es
-            responsabilidad exclusiva de dichos participantes y ajeno por
-            completo a Reymar.
+            la Aplicación no entrega premios en metálico. Cualquier
+            acuerdo privado entre miembros de una mesa es ajeno a Reymar.
           </li>
           <li>
             <span className="font-semibold text-foreground">
-              Cobro por Software (SaaS):
+              Temporada:
             </span>{" "}
-            las tarifas asociadas a la creación de ligas ampliadas o
-            funciones Premium corresponden al pago por el uso de capacidades
-            adicionales del software (servidores, procesamiento de datos,
-            estadísticas avanzadas).
+            un pago anual por mesa (compra dentro de la app; temporada
+            2026/27 del 4 de septiembre de 2026 al 1 de agosto de 2027).
+            En esa mesa desbloquea campañas, Versus, Gráfica, Pleno sin
+            watermark y el ranking combinado del año. Sin Temporada, la
+            mesa sigue con Reymar partido a partido y ranking de mesa
+            solo Reymar. Las campañas pueden jugarse para el ranking FREE
+            mundial. Temporada no es un peaje para crear el grupo.
+          </li>
+          <li>
+            <span className="font-semibold text-foreground">Club:</span>{" "}
+            alta manual, fuera del flujo de compras dentro de la app del
+            consumidor. No se vende como paquete de cupo ni como requisito
+            para abrir una mesa.
           </li>
         </ol>
       </Section>
 
-      <Section title="3. Propiedad Intelectual y Uso de Marcas">
+      <Section title="3. Propiedad intelectual y marcas">
         <ol className="list-decimal space-y-2 pl-6">
           <li>
             <span className="font-semibold text-foreground">
-              Uso Descriptivo y Nominativo:
+              Uso descriptivo:
             </span>{" "}
-            todos los nombres de competiciones futbolísticas (como UEFA
-            Champions League, Copa Libertadores, Concacaf Champions Cup),
-            países o ciudades mencionadas en la Aplicación se utilizan
-            únicamente con fines descriptivos del calendario deportivo real
-            de acceso público.
+            los nombres de competiciones se usan solo para describir el
+            calendario público. Hoy Champions está en lab; Libertadores,
+            Copa de Campeones y Copa Oro existen como estructura inactiva.
           </li>
           <li>
             <span className="font-semibold text-foreground">
-              Independencia de Marcas:
+              Escudos Cero:
             </span>{" "}
-            Reymar utiliza nombres de fantasía, acrónimos geográficos y
-            elementos gráficos genéricos o conceptuales. Ningún nombre,
-            logo, escudo o distintivo comercial dentro de la app implica
-            patrocinio, respaldo, licencia o vinculación oficial con clubes
-            deportivos, federaciones u organizaciones como la UEFA, CONMEBOL,
-            CONCACAF o FIFA.
+            Reymar usa acrónimos, nombres de fantasía y gráficos
+            genéricos. Ningún distintivo implica patrocinio, respaldo o
+            licencia de UEFA, CONMEBOL, Concacaf, FIFA, clubes o
+            federaciones. Reymar no está afiliada a esas entidades.
           </li>
           <li>
             <span className="font-semibold text-foreground">
-              Derechos de la Plataforma:
+              Derechos de la plataforma:
             </span>{" "}
-            el diseño UI, los algoritmos de puntuación, el código fuente y
-            las marcas &quot;Reymar&quot; son propiedad intelectual
-            exclusiva de la plataforma.
+            el diseño, los algoritmos de puntuación, el código y la marca
+            &quot;Reymar&quot; son de la plataforma.
           </li>
         </ol>
       </Section>
 
-      <Section title="4. Cuentas de Usuario y Reglas de Conducta">
+      <Section title="4. Cuentas y conducta">
         <ul className="list-disc space-y-2 pl-6">
           <li>
-            El Usuario se compromete a proporcionar un correo electrónico
-            válido y mantener la confidencialidad de sus credenciales.
+            El Usuario debe dar un correo válido y cuidar sus
+            credenciales.
           </li>
           <li>
-            Se prohíbe expresamente el uso de nombres de usuario o nombres de
-            ligas privadas que contengan lenguaje difamatorio, xenófobo,
-            obsceno o violatorio de derechos de terceros. Reymar se
-            reserva el derecho de suspender o eliminar cuentas que
-            incumplan esta norma.
+            Se prohíben nombres de usuario o de mesa difamatorios,
+            xenófobos, obscenos o que vulneren derechos de terceros.
+            Reymar puede suspender o eliminar esas cuentas.
           </li>
           <li>
-            Se prohíbe el uso de scripts, bots o intentos de explotación del
-            API de la plataforma.
+            Se prohíben scripts, bots o explotación de la API.
           </li>
         </ul>
       </Section>
 
-      <Section title="5. Compras en la Aplicación y Suscripciones (In-App Purchases)">
+      <Section title="5. Compras (Temporada) y Club">
         <ul className="list-disc space-y-2 pl-6">
           <li>
-            Las compras se procesan a través de la App Store de Apple y la
-            Play Store de Google según los términos de pago elegidos por el
-            usuario.
+            Temporada se procesa, cuando las tiendas estén abiertas, a
+            través de App Store y Google Play según sus términos.
           </li>
           <li>
-            Las ventas de paquetes de actualización de ligas o funciones
-            Premium son finales y no reembolsables por parte de Reymar,
-            salvo disposición legal obligatoria de las plataformas de
-            distribución de Apple o Google.
+            La compra de Temporada es por mesa y por año. No hay paquetes
+            de cupo ni un plan para “crear la mesa”.
+          </li>
+          <li>
+            Las ventas de Temporada no son reembolsables por Reymar,
+            salvo lo que exijan Apple o Google.
+          </li>
+          <li>
+            Club no es una compra dentro de la app del consumidor: el
+            alta es manual y se gestiona fuera de ese flujo.
           </li>
         </ul>
       </Section>
 
-      <Section title="6. Limitación de Responsabilidad">
+      <Section title="6. Marcadores y limitación">
         <p>
-          Reymar realiza sus mejores esfuerzos por garantizar la
-          disponibilidad continua del servicio y la precisión en la
-          sincronización de resultados deportivos provistos por API de
-          terceros. Sin embargo, no se garantiza que el servicio esté libre
-          de interrupciones o errores técnicos imprevistos. Reymar no se
-          hace responsable por pérdidas indirectas derivadas de fallas en la
-          transmisión de datos antes del cierre de una jornada de
-          pronósticos.
+          Los marcadores se actualizan en automático cuando el partido
+          cierra. No garantizamos difusión en vivo ni “fuentes oficiales
+          en producción”. Reymar no asegura un servicio libre de
+          interrupciones. No responde por pérdidas indirectas derivadas de
+          fallos técnicos antes del corte.
         </p>
       </Section>
 
       <Section title="7. Modificaciones">
         <p>
-          Nos reservamos el derecho de actualizar estos Términos en
-          cualquier momento. Las modificaciones entrarán en vigor a partir de
-          su publicación en la Aplicación o sitio web oficial.
+          Podemos actualizar estos Términos. Los cambios rigen desde su
+          publicación en la Aplicación o en getreymar.com.
         </p>
       </Section>
 
-      <Section title="8. Contacto Legal">
+      <Section title="8. Contacto">
         <p>
-          Para consultas legales o notificaciones sobre los Términos de Uso:
+          Consultas sobre estos Términos:{" "}
+          <a
+            href={`mailto:${SUPPORT_EMAIL}`}
+            className="font-semibold text-accent hover:underline"
+          >
+            {SUPPORT_EMAIL}
+          </a>
+          .
         </p>
-        <ul className="list-disc space-y-2 pl-6">
-          <li>
-            <span className="font-semibold text-foreground">Correo:</span>{" "}
-            <a
-              href={`mailto:${SUPPORT_EMAIL}`}
-              className="font-semibold text-accent hover:underline"
-            >
-              {SUPPORT_EMAIL}
-            </a>
-          </li>
-        </ul>
       </Section>
     </LegalLayout>
   );
